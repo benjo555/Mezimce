@@ -1,0 +1,203 @@
+.space{
+    padding: 8rem 0;
+    @media(min-width: 768px){
+        padding: 10rem 0;
+    }
+    @media(min-width: 992px){
+        padding: 12rem 0 19rem;
+    }
+    @media(min-width: 1200px){
+        padding: 16rem 0 24rem;
+    }
+    .space-icon2{
+        top: 5.5rem;
+        right: 2rem;
+        max-width: 70px;
+        @media(min-width: 576px){
+            max-width: 90px;
+            top: 4rem;
+        }
+        @media(min-width: 768px){
+            top: 6rem;
+        }
+        @media(min-width: 992px){
+            top: 6rem;
+            max-width: 150px;
+        }
+        @media(min-width: 1200px){
+            max-width: 200px;
+        }
+        @media(min-width: 1600px){
+            max-width: 220px;
+            top: 15%;
+            right: 10%;
+        }
+    }
+    .space-icon3{
+        top: 6.5rem;
+        left: 2rem;
+        max-width: 70px;
+        @media(min-width: 576px){
+            max-width: 90px;
+        }
+        @media(min-width: 768px){
+            top: 1rem;
+        }
+        @media(min-width: 992px){
+            max-width: 110px;
+        }
+        @media(min-width: 1200px){
+            max-width: 180px;
+            top: unset;
+            bottom: 20%;
+            left: unset;
+            right: 2%;
+        }
+        @media(min-width: 1600px){
+            max-width: 200px;
+            bottom: 20%;
+            right: 10%;
+        }
+    }
+    .space-wrapper{
+        max-width: 900px;
+    }
+    .space-icon-wrapper{
+        display: none;
+        @media(min-width: 1600px){
+            display: block;
+            top: 0;
+            left: 0%;
+            height: 100%;
+            transform: translateX(-75%);
+        }
+        .space-icon{
+            top: 95px;
+            width: 60%;
+        }
+    }
+
+    .space-gallery-title{
+        font-size: 4rem;
+        color: $primary;
+        letter-spacing: 0.1px;
+        font-weight: 600;
+        text-align: center;
+        font-style: italic;
+        margin-bottom: 3.2rem;
+        @media(min-width: 992px){
+            font-size: 4.6rem;
+            margin-bottom: 4.5rem;
+        }
+    }
+
+
+    .images-wrapper{
+        @media(min-width: 576px){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+        .gallery-title{
+            display: none;
+            @media(min-width: 992px){
+                display: block;
+                font-size: 2.4rem;
+                font-weight: 400;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+            span{
+                color: $primary;
+            }
+        }
+        .kindergarten{
+            border-radius: 12px;
+            overflow: hidden;
+            border: 2px dashed $light;
+            transition: 0.4s linear;
+            margin-bottom: 0;
+            &:first-of-type ~ .kindergarten{
+                display: none;
+            }
+            &:before{
+                padding-top: 60%;
+            }
+            @media(min-width: 992px){
+                border: 2px dashed transparent;
+            }
+            img{
+                transition: 0.4s linear;
+            }
+            &:hover{
+                border-color: $light;
+                img{
+                    transform: scale(1.2) perspective(1000px);
+                }
+                .overlay{
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+                .kindergarten-address{
+                    opacity: 1;
+
+                }
+            }
+            &:not(:last-of-type){
+                margin-bottom: 4rem;
+                @media(min-width: 576px){
+                    margin-bottom: 0;
+                }
+            }
+
+            .overlay{
+                inset: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+                border-radius: 12px;
+                transition: 0.4s linear;
+                @media(min-width: 992px){
+                    background-color: transparent;
+                }
+            }
+            .kindergarten-address{
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                text-align: center;
+                color: $white;
+                transform: translate(-50%, -40%);
+                z-index: 2;
+                margin-bottom: 0;
+                font-size: 3rem;
+                transition: 0.4s linear;
+                @media(min-width: 576px){
+                    font-size: 2.5rem;
+                }
+                @media(min-width: 992px){
+                    opacity: 0;
+                    transform: translate(-50%, -50%);
+                }
+                .address{
+                    @media(min-width: 992px){
+                        display: none !important;
+                    }
+                }
+                span.fa-solid{
+                    margin-top: 1rem;
+                    @media(min-width: 992px){
+                       margin-top: 0;
+                       font-size: 3.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.space-icon4{
+    display: none;
+    @media(min-width: 1600px){
+        display: block;
+        bottom: -10px;
+        right: -50%;
+        max-width: 500px;
+    }
+}

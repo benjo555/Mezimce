@@ -1,0 +1,140 @@
+.program{
+    padding: 7rem 0 9rem;
+    @media(min-width: 768px){
+        padding: 9rem 0 12rem;
+    }
+    @media(min-width: 992px){
+        padding: 11.7rem 0 13.9rem;
+    }
+    .program-data-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 3rem;
+        margin-bottom: 4rem;
+        position: relative;
+        z-index: 2;
+        background-color: $white;
+        @media(min-width: 576px){
+            grid-template-columns: repeat(2,1fr);
+            column-gap: 1.6rem;
+            row-gap: 2rem;
+        }
+        @media(min-width: 768px){
+            column-gap: 3.5rem;
+            row-gap: 3.3rem;
+            margin-bottom: 6rem;
+        }
+        @media(min-width: 1200px){
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 2rem;
+        }
+        .program-item{
+            padding: 6.5rem 2.5rem 4rem;
+            border: 2px solid $secondary;
+            border-radius: 5px;
+            position: relative;
+            @media(min-width: 576px){
+                border-radius: 1rem;
+            }
+            @media(min-width: 768px){
+                padding: 8.5rem 2rem 6rem;
+            }
+            @media(min-width: 1200px){
+                padding: 8.5rem 1.2rem 4rem 1.7rem;
+                border-radius: 2rem;
+            }
+            &:first-of-type{
+                .program-item-icon{
+                    background-color: #2b9450;
+                }
+            }
+            &:nth-of-type(2){
+                .program-item-icon{
+                    background-color: #2479e0;
+                }
+            }
+            &:nth-of-type(3){
+                .program-item-icon{
+                    background-color: #9e24e0;
+                }
+            }
+            &:last-of-type{
+                .program-item-icon{
+                    background-color: #e09e24;
+                    font-size: 2rem;
+                    @media(min-width: 768px){
+                        font-size: 3rem;
+                    }
+                }
+            }
+            .program-item-icon{
+                display: block;
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                width: 50px;
+                height: 50px;
+                color: $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #2b9450;
+                border-bottom-right-radius: 5px;
+                border-top-left-radius: 5px;
+                @media(min-width: 576px){
+                    border-bottom-right-radius: 1.5rem;
+                    border-top-left-radius: 1.5rem;
+                }
+                @media(min-width: 768px){
+                    width: 70px;
+                    height: 70px;
+                }
+                @media(min-width: 1200px){
+                    border-bottom-right-radius: 2rem;
+                    border-top-left-radius: 2rem;
+                }
+                &::before{
+                    font-size: 1.8rem;
+                    @media(min-width: 768px){
+                        font-size: 2.8rem;
+                    }
+                }
+            }
+            .program-item-desc{
+                font-size: 1.6rem;
+                margin-bottom: 0;
+                line-height: 1.4;
+                letter-spacing: normal;
+                @media(min-width: 576px){
+                    font-size: 1.5rem;
+                }
+                @media(min-width: 768px){
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+    .program-icon{
+        max-width: 100px;
+        margin-bottom: 3rem;
+        margin-inline: auto;
+        opacity: 0;
+        @media(min-width: 768px){
+            max-width: 160px;
+            margin-bottom: 4rem;
+        }
+    }
+    .program-link{
+        padding: 0;
+        padding-inline: 2.5rem;
+        line-height: 5.3rem;
+        transition: 0.4s linear;
+        font-size: 1.8rem;
+        font-weight: 500;
+        letter-spacing: 0.1px;
+        text-transform: uppercase;
+        display: block;
+        max-width: 240px;
+        margin-inline: auto;
+    }
+}

@@ -1,0 +1,106 @@
+footer{
+    padding: 6rem 0 1.5rem;
+    background-color: $primary;
+    color: $white;
+    text-align: center;
+    @media(min-width: 576px){
+        text-align: left;
+    }
+    @media(min-width: 768px){
+        padding-top: 8rem;
+    }
+    .footer-top{
+        border-bottom: 1.5px solid $white;
+        @media(min-width: 576px){
+            padding-bottom: 6rem;
+        }
+        @media(min-width: 768px){
+            padding-bottom: 8rem;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 4rem;
+            @media(min-width: 576px){
+                grid-template-columns: repeat(2,1fr);
+            }
+            @media(min-width: 768px){
+                gap: 8rem;
+            }
+            @media(min-width: 1200px){
+                gap: 12rem;
+            }
+            @media(min-width: 1600px){
+                gap: 16rem;
+            }
+        }
+        .footer-menu{
+            @media(min-width: 576px){
+                grid-column: 1/3;
+                column-count: 2;
+            }
+            @media(min-width: 768px){
+                grid-column: 1/2;
+                column-count: 1;
+            }
+            .footer-list{
+                .footer-item{
+                    &:not(:last-of-type){
+                        margin-bottom: 1rem;
+                        @media(min-width: 768px){
+                            margin-bottom: 2rem;
+                        }
+                    }
+                    a{
+                        font-size: 2rem;
+                        color: $white;
+                        letter-spacing: 0.2px;
+                        @media(min-width: 992px){
+                            font-size: 2.2rem;
+                        }
+                    }
+                }
+            }
+        }
+        .address-wrapper{
+            .address-item{
+                .item-wrap{
+                    margin-bottom: 2rem;
+                    &:not(last-of-type){
+                        @media(min-width: 576px){
+                            margin-bottom: 2rem; 
+                        }
+                    }
+                    .address-title{
+                        font-size: 2.2rem;
+                        color: lighten($danger, 10%);
+                        letter-spacing: 0.2px;
+                    }
+                    .address-link{
+                        color: $white;
+                        font-size: 1.6rem;
+                        transition: 0.4s linear;
+                        letter-spacing: 0.1px;
+                    }
+                    .address-worktime{
+                        font-size: 1.6rem;
+                        letter-spacing: 0.1px;
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom{
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+            display: block;
+            font-size: 1.2rem;
+            @media(min-width: 768px){
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

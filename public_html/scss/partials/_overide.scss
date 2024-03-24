@@ -1,0 +1,68 @@
+html{
+    font-size: 10px;
+}
+
+
+$light: #b81f39;
+$primary: #800b1f;
+$info: #239dfa;
+$secondary: #F5F5F5;
+$danger: #d4af37;
+$white: #fff;
+$dark: #000;
+$font-size-base:1.6rem;
+$grid-gutter-width: 3rem;
+$link-decoration:  none;
+
+
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  //xxl: 1400px
+);
+
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  //xxl: 1320px
+);
+// scss-docs-end container-max-widths
+
+$aspect-ratios: (
+  "1x1": 100%,
+  "4x3": 66.48%,
+  "16x9": calc(9 / 16 * 100%),
+  "21x9": calc(9 / 21 * 100%),
+  "services": 79.13%,
+  "map": 80.26%
+);
+$display-font-sizes: (
+1: 6rem,
+2: 4.5rem,
+3: 4rem,
+4: 3.5rem,
+5: 3rem,
+6: 2.5rem
+);
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .5,
+  2: $spacer,
+  3: $spacer * 1.5,
+  4: $spacer * 2,
+  5: $spacer * 2.5,
+  6: $spacer * 3,
+  7: $spacer * 3.5,
+  8: $spacer * 4,
+  9: $spacer * 4.5,
+  10: $spacer * 5,
+);
